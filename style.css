@@ -1,0 +1,82 @@
+* {
+    font-family: Roboto, sans-serif;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.banner {
+    background-color: #142149;
+    display: flex;
+    flex-direction: column;
+    padding: 73px 206px;
+    width: 100%;
+    align-items: center;
+    background-image: url('./sphere.svg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.banner h1 {
+    color: #fff;
+    font-weight: 300;
+    font-size: 66px;
+    line-height: 75.9px;
+    text-align: center;
+    max-width: 460px;
+} 
+
+.banner h1 span {
+    color: #51B9FF;
+}
+
+.branch_container {
+    display: flex;
+    gap: 19px;
+}
+
+
+.branch_lg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-block-start: 108px;
+    gap: 87px;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    color: #fff;
+    max-width: 650px;
+}
+
+.branch_lg::before {
+    content: "";
+    display: block;
+    height: 92px;
+    width: 2px;
+    background-color: #007bfc;
+}
+
+.branch_sm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-block-start: 31px;
+    gap: 28px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19.2px;
+    color: #fff;
+    max-width: 190px;
+    text-align: center;
+}
+
+.branch_sm::before {
+    content: "";
+    display: block;
+    height: 30px;
+    width: 2px;
+    background-color: #007bfc;
+}
+
