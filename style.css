@@ -1,3 +1,5 @@
+/* Custom Properties and Reset */
+
 :root {
     font-size: 12px;
     --font-primary: Roboto, sans-serif;
@@ -9,26 +11,28 @@
 }
 
 * {
-    transition: all 250ms ease-in-out;
+    box-sizing: border-box;
+    color: var(--color-white);
     font-family: var(--font-primary);
     font-weight: 300;
-    color: var(--color-white);
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    transition: all 250ms ease-in-out;
 }
 
+/* Banner Component Styles */
+
 .banner {
+    align-items: center;
     background-color: var(--color-dark-blue);
+    background-image: url('./assets/sphere.svg');
+    background-repeat: no-repeat;
+    background-position: bottom;
     display: flex;
     flex-direction: column;
     padding: 4.56rem 3.125rem 6.25rem;
-    width: 100%;
-    align-items: center;
-    background-image: url('./sphere.svg');
-    background-repeat: no-repeat;
-    background-position: bottom;
     text-align: center;
+    width: 100%;
 }
 
 .banner__title {
@@ -41,23 +45,23 @@
 }
 
 .banner__branch {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .banner__branch::before {
+    background-color: var(--color-mid-blue);
     content: "";
     display: block;
     width: 2px;
-    background-color: var(--color-mid-blue);
 }
 
 .banner__branch--lg { 
-    margin-block-start: 6.75rem;
-    gap: 5.437rem;
     font-size: 2.5rem;
+    gap: 5.437rem;
     line-height: 3rem;
+    margin-block-start: 6.75rem;
 }
 
 .banner__branch--lg::before {
@@ -67,14 +71,14 @@
 .banner__branch--container {
     display: flex;
     gap: 1.187rem;
-    width: 100%;
     justify-content: space-between;
+    width: 100%;
 }
 
 .banner__branch--sm {
-    margin-block-start: 1.937rem;
     gap: 1.75rem;
     line-height: 1.2rem;
+    margin-block-start: 1.937rem;
     width: 33%;
 }
 
