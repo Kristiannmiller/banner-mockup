@@ -11,7 +11,6 @@ function slideCarousel() {
           carouselIndex++
      }
      carouselItems[carouselIndex].classList.add("active")
-     console.log(carouselIndex)
 }
 
 setInterval(slideCarousel, 3000);
